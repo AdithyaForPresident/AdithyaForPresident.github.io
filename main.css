@@ -8,45 +8,62 @@ center {
     margin-right: -50%;
     transform: translate(-50%, -50%)
   }
-  aboveCenter {
-      border-radius: 1em;
-      padding: 1em;
-      position: absolute;
-      top: 30%;
+  #aboveCenter {
+     position: absolute;
       left: 50%;
       margin-right: -50%;
       transform: translate(-50%, -50%)
     }
 
-    rightCenter {
-        border-radius: 1em;
-        padding: 1em;
+    #rightCenter {
         position: absolute;
         top: 50%;
-        left: 55%;
+        left: 60%;
         margin-right: -50%;
-        transform: rotate(90deg);
+        transform: translate(-50%, -50%)
       }
 
-      leftCenter {
-          border-radius: 1em;
-          padding: 1em;
+      #leftCenter {
           position: absolute;
           top: 50%;
-          left: 36%;
+          left: 38%;
           margin-right: -50%;
-          transform: rotate(270deg);
+          transform: translate(-50%, -50%)
         }
 
-        bottomCenter {
-            border-radius: 1em;
-            padding: 1em;
+        #bottomCenter {
             position: absolute;
             top: 70%;
             left: 50%;
             margin-right: -50%;
             transform: translate(-50%, -50%)
           }
+
+#containerTop{
+  position: relative;
+  top: 25%;
+}
+
+#containerRight{
+  position: relative;
+  top: 50%;
+}
+
+#containerLeft{
+  position: relative;
+  top: 50%;
+}
+
+#containerBot{
+  position: relative;
+  top: 70%;
+}
+
+
+
+  .shadowed{
+    -webkit-box-shadow: 0 0 40px rgba(0, 0,0, .9);
+  }
 
 
   .circular {
@@ -59,5 +76,4 @@ center {
   	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-
   	}

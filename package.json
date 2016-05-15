@@ -1,0 +1,14 @@
+{
+  "name": "Adithya For President",
+  "version": "1.0",
+  "description": "Vote Adithya For Pres",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.2.3",
+  }
+}
