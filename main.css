@@ -1,6 +1,5 @@
 
 center {
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,7 +16,7 @@ center {
     #rightCenter {
         position: absolute;
         top: 50%;
-        left: 75%;
+        left: 72%;
         margin-right: -50%;
         transform: translate(-50%, -50%)
       }
@@ -25,7 +24,7 @@ center {
       #leftCenter {
           position: absolute;
           top: 50%;
-          left: 25%;
+          left: 28%;
           margin-right: -50%;
           transform: translate(-50%, -50%)
         }
@@ -58,12 +57,9 @@ center {
   top: 85%;
 }
 
-
-
   .shadowed{
     -webkit-box-shadow: 0 0 40px rgba(0, 0,0, .9);
   }
-
 
   .circular {
   	width: 460px;
