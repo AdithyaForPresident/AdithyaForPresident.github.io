@@ -18,7 +18,7 @@ center {
     #rightCenter {
         position: absolute;
         top: 50%;
-        left: 65%;
+        left: 67%;
         margin-right: -50%;
         transform: translate(-50%, -50%)
       }

@@ -22,12 +22,21 @@ function animateToTop(){
  console.log(posy);
   var id = setInterval(frame, .0001);
   function frame() {
-    if (posy == 200) {
-        clearInterval(id);
-      } else {
           if(posy > 100){
           elem.style.top = posy-- ;
-        }
+      }
+}
+}
+
+function animateToTopFB(){
+  var elem = document.getElementById("containerBot");
+  var rect = elem.getBoundingClientRect();
+  var posy = rect.top;
+ console.log(posy);
+  var id = setInterval(frame, .0001);
+  function frame() {
+          if(posy > 90){
+          elem.style.top = posy-- ;
       }
 }
 }
