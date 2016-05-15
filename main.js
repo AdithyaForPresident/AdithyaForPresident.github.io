@@ -13,8 +13,9 @@ function animateToTop(){
   var posy = rect.top;
   var id = setInterval(frame, 1);
   function frame() {
-          if(posy > 100){
-          elem.style.top = posy-- ;
+          if(posy > 90){
+            posy = posy - 20
+          elem.style.top =  posy;
       }
 }
 }
@@ -39,18 +40,20 @@ function animateToTopFR(){
   $("#containerTop").toggle();
   $("#containerLeft").toggle();
   $("#containerBot").toggle();
+
   var elem = document.getElementById("containerRight");
   var rect = elem.getBoundingClientRect();
   var posy = rect.top;
   var posx = rect.left;
- console.log(posx);
-  var id = setInterval(frame, .0001);
+  var id = setInterval(frame, 1);
   function frame() {
-          if(posy > 90  ){
-          elem.style.top = posy-- ;
+          if(posy > 80  ){
+            posy = posy - 13
+          elem.style.top = posy ;
       }
-      if(posx > 0){
-        elem.style.left = posx--;
+      if(posx > -420){
+        posx = posx - 13
+        elem.style.left = posx;
       }
 }
 }
@@ -63,14 +66,15 @@ function animateToTopFL(){
   var rect = elem.getBoundingClientRect();
   var posy = rect.top;
   var posx = rect.left;
- console.log(posx);
-  var id = setInterval(frame, .0001);
+  var id = setInterval(frame, 1);
   function frame() {
-          if(posy > 90  ){
-          elem.style.top = posy-- ;
-      }
-      if(posx > 0){
-        elem.style.left = posx--;
-      }
-}
+    if(posy > 93  ){
+      posy = posy - 13
+    elem.style.top = posy ;
+  }
+  if(posx < 412){
+    posx = posx + 13
+    elem.style.left = posx;
+  }
+  }
 }
