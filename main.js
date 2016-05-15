@@ -1,21 +1,7 @@
 'use strict';
 
-$(function() {
-  $(document).on("click",function (e) {
-    if (e.target.id=="DivA") {
-      $("#DivB").fadeToggle(200);
-      e.stopPropagation();
-      return false;
-    }
-    else if ($("#DivB").is(":visible")) {
-      $("#DivB").fadeOut(200);
-    }
-  });
-});
-
-
-
 function animateToTop(){
+    $("containerRight").toggle();
   var elem = document.getElementById("containerTop");
   var rect = elem.getBoundingClientRect();
   var posy = rect.top;
@@ -32,6 +18,20 @@ function animateToTopFB(){
   var elem = document.getElementById("containerBot");
   var rect = elem.getBoundingClientRect();
   var posy = rect.top;
+ console.log(posy);
+  var id = setInterval(frame, .0001);
+  function frame() {
+          if(posy > 90){
+          elem.style.top = posy-- ;
+      }
+}
+}
+
+function animateToTopFR(){
+  var elem = document.getElementById("containerRight");
+  var rect = elem.getBoundingClientRect();
+  var posy = rect.top;
+  var posx = rect.left;
  console.log(posy);
   var id = setInterval(frame, .0001);
   function frame() {
