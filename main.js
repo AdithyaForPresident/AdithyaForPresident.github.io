@@ -1,12 +1,14 @@
 'use strict';
 
+var count = true;
+
 function homeToTop(){
 
     var elem = document.getElementById("center");
     var rect = elem.getBoundingClientRect();
     var posy = 0;
     var posx = 910;
-    var id = setInterval(frame, 1);
+    var id = setInterval(frame, 4);
     function frame() {
             if(posy > -350 ){
               posy = posy - 13
@@ -27,7 +29,7 @@ function animateToTop(){
   var elem = document.getElementById("containerTop");
   var rect = elem.getBoundingClientRect();
   var posy = rect.top;
-  var id = setInterval(frame, 1);
+  var id = setInterval(frame, 4);
   function frame() {
           if(posy > 90){
             posy = posy - 20
@@ -44,7 +46,7 @@ function animateToTopFB(){
   var elem = document.getElementById("containerBot");
   var rect = elem.getBoundingClientRect();
   var posy = rect.top;
-  var id = setInterval(frame, 1);
+  var id = setInterval(frame, 4);
   function frame() {
           if(posy > 90){
             posy = posy-20;
@@ -62,7 +64,7 @@ homeToTop();
   var rect = elem.getBoundingClientRect();
   var posy = rect.top;
   var posx = rect.left;
-  var id = setInterval(frame, 1);
+  var id = setInterval(frame, 4);
   function frame() {
           if(posy > 80  ){
             posy = posy - 13
@@ -87,11 +89,11 @@ function animateToTopFL(){
   var id = setInterval(frame, 1);
   function frame() {
     if(posy > 98  ){
-      posy = posy - 13
+      posy = posy - 12
     elem.style.top = posy ;
   }
-  if(posx < 412){
-    posx = posx + 13
+  if(posx < 460){
+    posx = posx + 17
     elem.style.left = posx;
   }
   }
