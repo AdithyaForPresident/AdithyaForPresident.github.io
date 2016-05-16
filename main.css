@@ -19,37 +19,37 @@ img{
   }
   #aboveCenter {
      position: absolute;
-     left: 44%;
+     left: 42.5%;
     }
 
     #rightCenter {
         position: absolute;
-        left: 66%;
+        left: 67%;
       }
 
       #leftCenter {
           position: absolute;
-          left: 21%;
+          left: 18%;
         }
 
         #bottomCenter {
             position: absolute;
-            left: 44%;
+            left: 42.5%;
           }
 
 #containerTop{
   position: relative;
-  top: 10%;
+  top: 8%;
 }
 
 #containerRight{
   position: relative;
-  top: 43%;
+  top: 41.5%;
 }
 
 #containerLeft{
   position: relative;
-  top: 43%;
+  top: 41.5%;
 }
 
 #containerBot{
@@ -62,8 +62,8 @@ img{
   }
 
   .circular {
-    width:60%;
-    height:auto;
-  	border-radius: 300px;
-  	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    width: 55%;
+    height: auto;
+  	border-radius: 80%;
+  	box-shadow: 0 0 15px rgba(0, 0, 0, .8);
   	}
