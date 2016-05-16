@@ -11,16 +11,16 @@ function reset(){
   $("#containerTop").show();
 
   var elem = document.getElementById("containerBot");
-  elem.style.left = 8;
-  elem.style.top = 686.75;
+  elem.style.left = '0%';
+  elem.style.top = "75%"
 
   var elem2 = document.getElementById("containerLeft");
-  elem2.style.left = 8;
-  elem2.style.top = 383.5625 ;
+  elem2.style.top = '41.5%';
+  elem2.style.left = '0%' ;
 
   var elem2 = document.getElementById("containerRight");
-  elem2.style.left = 8;
-  elem2.style.top = 383.5625 ;
+  elem2.style.left = "0%"
+  elem2.style.top = "41.5%" ;
 
   var meetAdithhya = document.getElementById('meetAdi');
   meetAdithhya.style.left = '100%';
@@ -32,40 +32,39 @@ function reset(){
 }
 
 function topToHome(){
-    var elem = document.getElementById("center");
-    var rect = elem.getBoundingClientRect();
-    var posy = rect.top;
-    var posx = rect.left;
-    var id = setInterval(frame, 4);
-    function frame() {
-            if(posy <  0){
-              posy = posy + 10
-            elem.style.top = posy ;
-        }
-        if(posx < 711){
-          posx = posx + 10
-          elem.style.left = posx;
-        }
+  var elem = document.getElementById("center");
+  var elem2 = document.getElementById("centerContainer");
+  var posy = -5;
+  var posx = 15;
+  var id = setInterval(frame, 3);
+  function frame() {
+          if(posy < 27){
+            posy = posy + 2
+          elem2.style.top = posy + "%";
       }
+      if(posx < 37){
+        posx = posx + 2
+        elem.style.left = posx + "%";
+      }
+    }
   }
 
 
 function homeToTop(){
   if(count){
     var elem = document.getElementById("center");
-    var rect = elem.getBoundingClientRect();
-
-    var posy = 0;
-    var posx = 910;
+    var elem2 = document.getElementById("centerContainer");
+    var posy = 27;
+    var posx = 37;
     var id = setInterval(frame, 4);
     function frame() {
-            if(posy > -350 ){
-              posy = posy - 13
-            elem.style.top = posy ;
+            if(posy > -5){
+              posy = posy - 5
+            elem2.style.top = posy + "%";
         }
-        if(posx > 250){
-          posx = posx - 39
-          elem.style.left = posx;
+        if(posx > 15){
+          posx = posx - 5
+          elem.style.left = posx + "%";
         }
       }
     }
@@ -78,8 +77,9 @@ function animateToTop(){
     $("#containerLeft").toggle();
     $("#containerBot").toggle();
     homeToTop();
+    flyIn("meetAdi", "containerText1");
+
   }
-  flyIn("meetAdi", "containerText1");
 }
 
 function animateToTopFB(){
@@ -89,18 +89,16 @@ function animateToTopFB(){
   $("#containerTop").toggle();
   homeToTop();
 
-  var elem = document.getElementById("containerBot");
-  var rect = elem.getBoundingClientRect();
-
-  var posy = rect.top;
-  var id = setInterval(frame, 4);
+  var elem2 = document.getElementById("containerBot");
+  var posy = 75;
+  var id = setInterval(frame, 3);
   function frame() {
-          if(posy > 90){
-            posy = posy-20;
-          elem.style.top = posy;
+          if(posy > 8){
+            posy = posy - 2
+          elem2.style.top = posy + "%";
       }
     }
-  }
+}
 }
 
 function animateToTopFR(){
