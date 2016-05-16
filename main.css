@@ -1,73 +1,60 @@
-
 body {
    overflow-x:hidden;
    position:relative;
 }
 
+img{
+  width:50%;
+  height:auto;
+}
+
 #centerContainer{
   position: relative;
-  top: 50%;
+  top: 27%;
 }
 
 #center {
     position: absolute;
-    top: 50%;
-    left: 58.5%;
-    transform: translate(-50%, -50%)
+    left: 37%;
   }
   #aboveCenter {
      position: absolute;
-      left: 50%;
-      transform: translate(-50%, -50%)
+     left: 44%;
     }
 
     #rightCenter {
         position: absolute;
-        top: 50%;
-        left: 72%;
-        transform: translate(-50%, -50%)
+        left: 66%;
       }
 
       #leftCenter {
           position: absolute;
-          top: 50%;
-          left: 28%;
-          transform: translate(-50%, -50%)
+          left: 21%;
         }
 
         #bottomCenter {
             position: absolute;
-            top: 70%;
-            left: 50%;
-            transform: translate(-50%, -50%)
+            left: 44%;
           }
 
 #containerTop{
   position: relative;
-  top: 15%;
+  top: 10%;
 }
 
 #containerRight{
   position: relative;
-  top: 50%;
+  top: 43%;
 }
-
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-}
-
-
 
 #containerLeft{
   position: relative;
-  top: 50%;
+  top: 43%;
 }
 
 #containerBot{
   position: relative;
-  top: 85%;
+  top: 75%;
 }
 
   .shadowed{
