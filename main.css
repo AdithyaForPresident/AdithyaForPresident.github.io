@@ -75,12 +75,22 @@ img{
     }
 
 
-  #containerText{
+  #containerText1{
+    position: relative;
+    top: 50%;
+  }
+
+  #containerText2{
     position: relative;
     top: 50%;
   }
 
   #meetAdi{
+    position: absolute;
+    left:100%;
+  }
+
+  #platform{
     position: absolute;
     left:100%;
   }

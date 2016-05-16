@@ -25,6 +25,10 @@ function reset(){
   var meetAdithhya = document.getElementById('meetAdi');
   meetAdithhya.style.left = '100%';
 
+  var platform = document.getElementById('platform');
+  platform.style.left = '100%';
+
+
 }
 
 function topToHome(){
@@ -74,8 +78,8 @@ function animateToTop(){
     $("#containerLeft").toggle();
     $("#containerBot").toggle();
     homeToTop();
-    flyIn("meetAdi");
   }
+  flyIn("meetAdi", "containerText1");
 }
 
 function animateToTopFB(){
@@ -84,6 +88,7 @@ function animateToTopFB(){
   $("#containerLeft").toggle();
   $("#containerTop").toggle();
   homeToTop();
+
   var elem = document.getElementById("containerBot");
   var rect = elem.getBoundingClientRect();
 
@@ -108,8 +113,7 @@ homeToTop();
   var rect = elem.getBoundingClientRect();
   var posy = rect.top;
   var posx = rect.left;
-  console.log(rect.top);
-  console.log(rect.left);
+  flyIn("platform", "containerText2");
   var id = setInterval(frame, 4);
   function frame() {
           if(posy > 80  ){
@@ -149,10 +153,10 @@ function animateToTopFL(){
 }
 }
 
-function flyIn(id){
+function flyIn(id,cont){
   var elem = document.getElementById(id);
   var posx = 100;
-  var tops = document.getElementById("containerText")
+  var tops = document.getElementById(cont)
   var posy = 50;
   var id = setInterval(frame, 1);
   function frame() {
