@@ -1,6 +1,15 @@
 
-center {
-    position: absolute;
+body {
+   overflow-x:hidden;
+}
+
+#centerContainer{
+  position: relative;
+  top: 50%;
+}
+
+#center {
+    position: absolute;;
     top: 50%;
     left: 50%;
     margin-right: -50%;

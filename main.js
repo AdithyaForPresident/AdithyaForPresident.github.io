@@ -2,6 +2,21 @@
 
 function homeToTop(){
 
+    var elem = document.getElementById("center");
+    var rect = elem.getBoundingClientRect();
+    var posy = rect.top;
+    var posx = rect.left;
+    var id = setInterval(frame, 100);
+    function frame() {
+            if(posy > -300 ){
+              posy = posy - 13
+            elem.style.top = posy ;
+        }
+        if(posx > 150){
+          posx = posx - 13
+          elem.style.left = posx;
+        }
+  }
 }
 
 function animateToTop(){
@@ -68,7 +83,7 @@ function animateToTopFL(){
   var posx = rect.left;
   var id = setInterval(frame, 1);
   function frame() {
-    if(posy > 93  ){
+    if(posy > 98  ){
       posy = posy - 13
     elem.style.top = posy ;
   }
