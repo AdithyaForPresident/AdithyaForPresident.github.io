@@ -66,3 +66,21 @@ img{
   	border-radius: 80%;
   	box-shadow: 0 0 15px rgba(0, 0, 0, .8);
   	}
+
+    .special{
+      height:49%;
+      width:110%;
+      border-radius: 15%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+    }
+
+
+  #containerText{
+    position: relative;
+    top: 50%;
+  }
+
+  #meetAdi{
+    position: absolute;
+    left:100%;
+  }

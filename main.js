@@ -22,6 +22,8 @@ function reset(){
   elem2.style.left = 8;
   elem2.style.top = 383.5625 ;
 
+  var meetAdithhya = document.getElementById('meetAdi');
+  meetAdithhya.style.left = '100%';
 
 }
 
@@ -72,6 +74,7 @@ function animateToTop(){
     $("#containerLeft").toggle();
     $("#containerBot").toggle();
     homeToTop();
+    flyIn("meetAdi");
   }
 }
 
@@ -128,6 +131,7 @@ function animateToTopFL(){
   $("#containerBot").toggle();
   homeToTop();
   var elem = document.getElementById("containerLeft");
+
   var rect = elem.getBoundingClientRect();
   var posy = rect.top;
   var posx = rect.left;
@@ -143,4 +147,23 @@ function animateToTopFL(){
   }
   }
 }
+}
+
+function flyIn(id){
+  var elem = document.getElementById(id);
+  var posx = 100;
+  var tops = document.getElementById("containerText")
+  var posy = 50;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if(posx > 29){
+      posx = posx - 2
+      elem.style.left = posx + "%";
+    }
+    if(posy > 35){
+      posy = posy - 2
+      tops.style.top = posy + "%";
+    }
+}
+
 }
