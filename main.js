@@ -4,11 +4,25 @@ var count = true;
 
 function reset(){
   count = true;
+  topToHome();
   $("#containerRight").show();
   $("#containerLeft").show();
   $("#containerBot").show();
   $("#containerTop").show();
-  topToHome();
+
+  var elem = document.getElementById("containerBot");
+  elem.style.left = 8;
+  elem.style.top = 686.75;
+
+  var elem2 = document.getElementById("containerLeft");
+  elem2.style.left = 8;
+  elem2.style.top = 383.5625 ;
+
+  var elem2 = document.getElementById("containerRight");
+  elem2.style.left = 8;
+  elem2.style.top = 383.5625 ;
+
+
 }
 
 function topToHome(){
@@ -69,8 +83,7 @@ function animateToTopFB(){
   homeToTop();
   var elem = document.getElementById("containerBot");
   var rect = elem.getBoundingClientRect();
-  console.log(rect.top);
-  console.log(rect.left);
+
   var posy = rect.top;
   var id = setInterval(frame, 4);
   function frame() {
@@ -92,6 +105,8 @@ homeToTop();
   var rect = elem.getBoundingClientRect();
   var posy = rect.top;
   var posx = rect.left;
+  console.log(rect.top);
+  console.log(rect.left);
   var id = setInterval(frame, 4);
   function frame() {
           if(posy > 80  ){
