@@ -8,11 +8,11 @@ function homeToTop(){
     var posx = 910;
     var id = setInterval(frame, 1);
     function frame() {
-            if(posy > -300 ){
+            if(posy > -350 ){
               posy = posy - 13
             elem.style.top = posy ;
         }
-        if(posx > 150){
+        if(posx > 250){
           posx = posx - 39
           elem.style.left = posx;
         }
