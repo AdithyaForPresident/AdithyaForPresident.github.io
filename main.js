@@ -2,10 +2,39 @@
 
 var count = true;
 
-function homeToTop(){
+function reset(){
+  count = true;
+  $("#containerRight").show();
+  $("#containerLeft").show();
+  $("#containerBot").show();
+  $("#containerTop").show();
+  topToHome();
+}
 
+function topToHome(){
     var elem = document.getElementById("center");
     var rect = elem.getBoundingClientRect();
+    var posy = rect.top;
+    var posx = rect.left;
+    var id = setInterval(frame, 4);
+    function frame() {
+            if(posy <  0){
+              posy = posy + 10
+            elem.style.top = posy ;
+        }
+        if(posx < 711){
+          posx = posx + 10
+          elem.style.left = posx;
+        }
+      }
+  }
+
+
+function homeToTop(){
+  if(count){
+    var elem = document.getElementById("center");
+    var rect = elem.getBoundingClientRect();
+
     var posy = 0;
     var posx = 910;
     var id = setInterval(frame, 4);
@@ -18,33 +47,30 @@ function homeToTop(){
           posx = posx - 39
           elem.style.left = posx;
         }
-  }
+      }
+    }
+    count = false;
 }
 
 function animateToTop(){
+  if(count){
     $("#containerRight").toggle();
     $("#containerLeft").toggle();
     $("#containerBot").toggle();
     homeToTop();
-  var elem = document.getElementById("containerTop");
-  var rect = elem.getBoundingClientRect();
-  var posy = rect.top;
-  var id = setInterval(frame, 4);
-  function frame() {
-          if(posy > 90){
-            posy = posy - 20
-          elem.style.top =  posy;
-      }
-}
+  }
 }
 
 function animateToTopFB(){
+  if(count){
   $("#containerRight").toggle();
   $("#containerLeft").toggle();
   $("#containerTop").toggle();
   homeToTop();
   var elem = document.getElementById("containerBot");
   var rect = elem.getBoundingClientRect();
+  console.log(rect.top);
+  console.log(rect.left);
   var posy = rect.top;
   var id = setInterval(frame, 4);
   function frame() {
@@ -52,10 +78,12 @@ function animateToTopFB(){
             posy = posy-20;
           elem.style.top = posy;
       }
-}
+    }
+  }
 }
 
 function animateToTopFR(){
+  if(count){
   $("#containerTop").toggle();
   $("#containerLeft").toggle();
   $("#containerBot").toggle();
@@ -74,10 +102,12 @@ homeToTop();
         posx = posx - 13
         elem.style.left = posx;
       }
-}
+    }
+  }
 }
 
 function animateToTopFL(){
+  if(count){
   $("#containerRight").toggle();
   $("#containerTop").toggle();
   $("#containerBot").toggle();
@@ -97,4 +127,5 @@ function animateToTopFL(){
     elem.style.left = posx;
   }
   }
+}
 }
