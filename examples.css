@@ -7,8 +7,10 @@ form,fieldset,input,textarea,p,blockquote,th,td {
     margin: 0;
 
 }
-a{
-	text-decoration:none;
+a.cert{
+  font-family: serif;
+  font-size: 3em;
+  color:#fff;
 }
 table {
     border-spacing: 0;
@@ -48,6 +50,11 @@ h1,h2,h3,h4,h5,h6 {
   box-shadow: 0 0 15px rgba(0, 0, 0, .8);
   }
 
+.imageSizing{
+  width: 75em;
+  height: 50em;
+}
+
 q:before,q:after {
     content:'';
 }
@@ -73,12 +80,13 @@ h2{
 	font-size: 6.6em;
 }
 p{
+  font-family: serif;
 	font-size: 3em;
   color:#fff;
 }
 
 .intro p{
-	width: 89%;
+	width: 91%;
   height: 89%;
 	margin: 0 auto;
 	font-size: 3em;
@@ -150,8 +158,8 @@ p{
 }
 #menu li a{
   display: table-cell;
-  vertical-align: middle;
-  font-size: 20px;
+  vertical-align: top;
+  font-size: 21px;
   text-align: center;
   color:#fff;
 
@@ -159,7 +167,6 @@ p{
 
 #menu li a.bigger{
   color:#fff;
-
   font-size: 28px;
   text-align: center;
 }
