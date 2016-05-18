@@ -122,11 +122,18 @@ p{
 	font-size: 3em;
 }
 
+.tq{
+  height: 30em;
+  width: 60em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
 
 #textBox3{
-  margin-left: 22em;
-  margin-right: 22em;
-  margin-top: 0em;
+  margin-left: 20%;
+  margin-right: 20%;
   background: rgba(0,0,0, 0.5);
   -webkit-border-radius: 30px;
   box-shadow: 0 0 15px rgba(0, 0, 0, .8);
